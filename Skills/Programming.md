@@ -1,95 +1,106 @@
-## Asynchronous programming
+## Programming fundamental concepts
 
-- Theory
-  - Event loop: 🎓 known
-  - try..catch: 🖐️ used
-  - Non-blocking: 🎓 known
-  - Async I/O: 🎓 known
-  - Thread pool: 🎓 known
-  - Pattern Reactor: 👂 heard
-  - CAS operations: 👂 heard
-  - epoll: 👂 heard
-  - kqueue: 👂 heard
-  - Completion ports: 👂 heard
-  - Event ports: 👂 heard
-  - libuv: 🎓 known
-  - Race conditions: 🎓 known
-  - Dead locks: 🎓 known
-  - Live locks: 🎓 known
-  - Concurrent programming: 👂 heard
-  - Parallel programming: 👂 heard
-  - Actor Model: 👂 heard
-  - Thread: 🎓 known
-  - Process: 🎓 known
-- Async contracts
-  - Callbacks: 🖐️ used
-  - Callback-last-error-first: 🖐️ used
-  - Thenable: 🖐️ used
-  - Promise: 🖐️ used
-  - Async/await: 🖐️ used
-  - Future: 🎓 known
-  - Deferred: 🎓 known
-  - Sync generator: 👂 heard
-  - Async Generator: 👂 heard
-  - Async Iterator: 👂 heard
-  - Event: 🖐️ used
-  - Coroutine: 👂 heard
-  - Goroutine: 👂 heard
-  - Signal: 👂 heard
-  - Stream: 👂 heard
-  - Chain of responsibility: 👂 heard
-  - Middleware: 👂 heard
-  - Locks: 👂 heard
-- Async adapters and utils
-  - callbackify: 🎓 known
-  - promisify: 🎓 known
-  - asyncify: 🎓 known
-  - callbacks compose: 👂 heard
-  - async compose: 👂 heard
-- Async abstractions interfaces
-  - EventEmitter: 🎓 known
-  - Observable/Observer: 🎓 known
-  - Readable: 🎓 known
-  - Writable: 🎓 known
-  - Transform: 🎓 known
-  - Async Pool: 🎓 known
-  - Async Queue: 🎓 known
-  - Async Collector: 🎓 known
-  - Semaphore: 👂 heard
-  - Mutex: 👂 heard
-  - Spin Lock: 👂 heard
-- JavaScript & Node.js specific
-  - Timers: 🖐️ used
-  - setImmediate: 🖐️ used
-  - nextTick: 🎓 known
-  - AbortController: 👂 heard
-  - AbortSignal: 👂 heard
-  - Promise unhandled rejection:🎓 known
-  - Promise double resolve: 🎓 known
-  - child_process: 👂 heard
-  - worker_threads: 👂 heard
-  - Atomics: 🎓 known
-  - High resolution clock: 👂 heard
-  - Callback hell:🎓 known
-  - Promise hell: 🎓 known
-  - ref() and unref(): 👂 heard
-  - Error handling in async code: 🎓 known
-  - Better stack traces with return await: 👂 heard
-  - JSON: streaming serialization: 🎓 known
-  - promisify: 🎓 known
-  - callbackify: 🎓 known
-  - AsyncLocalStorage: 👂 heard
-  - AsyncResource: 👂 heard
-- Techniques
-  - async.js library: 🖐️ used
-  - RxJS library: 👂 heard
-  - Async composition: 👂 heard
-  - Promise.all: 👂 heard
-  - Promise.allSettled: 🎓 known
-  - Promise.race: 🎓 known
-  - Promise.any: 🎓 known
-  - Web Locks API: 👂 heard
-  - IPC: 👂 heard
-  - Channel API: 👂 heard
-  - Revealing Constructor: 👂 heard
-  - Web Locks API: 👂 heard
+- Syntax and concepts
+  - value: 🙋 explained
+  - identifier: 🙋 explained
+  - variable: 🙋 explained
+  - constant: 🙋 explained
+  - scalar: 🙋 explained
+  - literal: 🙋 explained
+  - expression: 🙋 explained
+  - heap: 🎓 known
+  - function: 🙋 explained
+  - procedure: 🖐️ used
+  - method: 🙋 explained
+  - class: 🙋 explained
+  - prototype: 🖐️ used
+  - event: 🖐️ used
+  - type: 🖐️ used
+  - primitive types: 🙋 explained
+  - reference types: 🙋 explained
+  - flag: 🙋 explained
+  - lexical scope: 🙋 explained
+  - code block: 🙋 explained
+  - conditions: 🙋 explained
+  - loops: 🙋 explained
+  - assignment: 🙋 explained
+  - regular expression: 🙋 explained
+  - interface: 🖐️ used
+  - contract: 🖐️ used
+  - module: 🖐️ used
+  - call stack: 🖐️ used
+- Functions
+  - signature: 🙋 explained
+  - argument: 🙋 explained
+  - parameter: 🙋 explained
+  - pure function: 🙋 explained
+  - lambda expression: 🙋 explained
+  - side effects: 🎓 known
+  - closure: 🖐️ used
+  - partial application: 🖐️ used
+  - curry: 🖐️ used
+  - higher order: 🖐️ used
+  - recursion: 🖐️ used
+  - callback: 🖐️ used
+  - listener: 🖐️ used
+  - compose: 🖐️ used
+  - pipe: 🖐️ used
+  - memoize: 🖐️ used
+  - wrapper: 🖐️ used
+  - functor: 👂 heard
+  - monad: 👂 heard
+  - monoid: 👂 heard
+  - generator: 🎓 known
+  - coroutine: 👂 heard
+- Data structures
+  - array: 🙋 explained
+  - structure: 🖐️ used
+  - record: 🎓 known
+  - enum: 🖐️ used
+  - instance: 🙋 explained
+  - object: 🙋 explained
+  - class: 🙋 explained
+  - collection: 🙋 explained
+  - set: 🖐️ used
+  - hash table: 🖐️ used
+  - linked list: 🖐️ used
+  - doubly list: 🖐️ used
+  - unrolled list: 🎓 known
+  - circular list: 🎓 known
+  - queue: 🖐️ used
+  - stack: 🖐️ used
+  - deque: 🖐️ used
+  - tree: 🖐️ used
+  - graph: 🖐️ used
+  - iterator: 🎓 known
+  - mutable state: 🎓 known
+  - immutable state: 🎓 known
+  - serialization: 🖐️ used
+  - string parsing: 🖐️ used
+- Process & style
+  - compiler: 🎓 known
+  - transpiler: 🎓 known
+  - linter: 🎓 known
+  - polyfill: 🎓 known
+  - debugger: 🖐️ used
+  - garbage collection: 🎓 known
+  - refactoring: 🖐️ used
+  - code review: 🖐️ used
+  - antipatterns: 🎓 known
+  - paradigm: 🖐️ used
+  - algorithm: 🖐️ used
+  - magic numbers: 🎓 known
+  - hardcode: 🎓 known
+  - complexity: 🎓 known
+  - decomposition: 🎓 known
+  - spaghetti: 🎓 known
+  - silver bullet: 🎓 known
+  - not invented here: 🎓 known
+  - dead code: 🎓 known
+  - unreachable code: 🎓 known
+  - duplicate code: 🎓 known
+  - exception: 🖐️ used
+  - return early: 🖐️ used
+  - unittest: 🎓 known
+  - git: 🖐️ used
+  - github: 🖐️ used
